@@ -1,0 +1,5 @@
+deploy:
+  user: deploy
+  host: mysuperawesomesite.com
+  path: /var/www/apps/mysuperawesomesite/public
+  port: 22
