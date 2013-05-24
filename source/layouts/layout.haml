@@ -17,11 +17,15 @@
     /[if lt IE 9]
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   %body
-    = partial 'header'
+    = partial 'layouts/header'
     = yield
-    = partial 'footer'
+    = partial 'layouts/footer'
     / Put this above your </body> tag
     :javascript
       $(window).load(function() {
         $('#slider').orbit();
+      });
+    :javascript
+      $(window).load(function() {
+        $('#featured').orbit({ fluid: '2x1' });
       });
