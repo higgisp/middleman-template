@@ -1,62 +1,38 @@
 ---
 title: My Super Awesome Site
 ---
+/ First Band (Slider)
+/ The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider
+.row
+  .twelve.columns
+    #slider
+      %img{:src => "http://placehold.it/1000x400&text=[img 1]"}/
+      %img{:src => "http://placehold.it/1000x400&text=[img 2]"}/
+      %img{:src => "http://placehold.it/1000x400&text=[img 3]"}/
+      %img{:src => "http://placehold.it/1000x400&text=[img 4]"}/
+    %hr/
+/ Three-up Content Blocks
+.row
+  .four.columns
+    %img{:src => "http://placehold.it/400x300&text=[img]"}/
+    %h4 This is a content section.
+    %p Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
+  .four.columns
+    %img{:src => "http://placehold.it/400x300&text=[img]"}/
+    %h4 This is a content section.
+    %p Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
+  .four.columns
+    %img{:src => "http://placehold.it/400x300&text=[img]"}/
+    %h4 This is a content section.
+    %p Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
+/ Call to Action Panel
+.row
+  .twelve.columns
+    .panel
+      %h4 Get in touch!
+      .row
+        .nine.columns
+          %p We'd love to hear from you, you attractive person you.
+        .three.columns
+          %a.radius.button.right{:href => "#"} Contact Us
 
-= partial 'header'
-
-/ Main Grid Section
-.row
-  .three.columns
-    .panel
-      %h5 Panel Title
-      %p This is a three columns grid panel with an arbitrary height.
-  .six.columns
-    .panel
-      %h5 Panel Title
-      %p This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.
-  .three.columns
-    .panel
-      %h5 Panel Title
-      %p This is a three columns grid panel with an arbitrary height.
-.row
-  .six.columns
-    .panel
-      %h5 Panel Title
-      %p This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.
-  .two.columns
-    .panel
-      %p
-        %img{:src => "http://placehold.it/200x200"}/
-  .four.columns
-    .panel
-      %h5 Panel Title
-      %p This is a four columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami.
-.row
-  .four.columns
-    .panel
-      %p
-        %img{:src => "http://placehold.it/400x300"}/
-  .four.columns
-    .panel
-      %p
-        %img{:src => "http://placehold.it/400x300"}/
-  .four.columns
-    .panel
-      %p
-        %img{:src => "http://placehold.it/400x300"}/
-.row
-  .six.columns
-    .panel
-      %h5 Panel Title
-      %p This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.
-  .three.columns
-    .panel
-      %h5 Panel Title
-      %p This is a three columns grid panel with an arbitrary height.
-  .three.columns
-    .panel
-      %h5 Panel Title
-      %p This is a three columns grid panel with an arbitrary height.
-/ End Grid Section
-
-= partial 'footer'
